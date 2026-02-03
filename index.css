@@ -3,58 +3,39 @@ html{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
 }
+
+#bell, #bell1, #bell2{
+    opacity: 0.9;
+    color: #181616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    font-size: 480px;
+    font-weight: bold;
+}
+
 #bell{
-     filter: opacity(90%);
-    color: #181616;
-    margin-top:-200px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-family:serif;
-    font-size: 480px;
-    font-weight: bold;
+    margin-top: -200px;
 }
 
-#bell1{
-    filter: opacity(90%);
-    color: #181616;
-    margin-top:-680px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-family:serif;
-    font-size: 480px;
-    font-weight: bold;
-
-}
-#bell2{
-    filter: opacity(90%);
-    color: #181616;
-    margin-top:-680px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-family:serif;
-    font-size: 480px;
-    font-weight: bold;
-
+#bell1, #bell2{
+    margin-top: -680px;
 }
 
-H1{
+h1{
     color: #FFFFFF;
-    margin-top:-1250px;
-    display:flex;
+    margin-top: -1250px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-family:serif;
+    font-family: serif;
     font-size: 80px;
     font-weight: bold;
-    letter-spacing: 30PX;
+    letter-spacing: 30px;
     position: relative;
+    left: 10px;
 }
 
 
@@ -62,27 +43,26 @@ H1{
 
 
 @media (max-width: 768px) {
-html{
-    overflow: hidden;
-background-image: linear-gradient(to bottom, black,rgb(37, 37, 37),black);}
+    html{
+        overflow: hidden;
+        background-image: linear-gradient(to bottom, black, rgb(37, 37, 37), black);
+    }
 
-   #bell1,#bell2, #bell{
+    #bell1, #bell2, #bell{
         visibility: hidden;
     }
 
-
-        H1{
-    color: #FFFFFF;
-    margin-top:-1250px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-family:serif;
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 30PX;
-    position: relative;
-    left: 10px;
-
+    h1{
+        color: #FFFFFF;
+        margin-top: -1250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: serif;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 30px;
+        position: relative;
+        left: 10px;
     }
 }
