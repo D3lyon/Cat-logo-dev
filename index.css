@@ -1,17 +1,19 @@
 html{
     background-color: #000000;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
 
+
 #bell, #bell1, #bell2{
-    opacity: 0.9;
-    color: #181616;
+    opacity: 0.7;
+    color: #141313;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: serif;
+    font-family: sans-serif;
     font-size: 480px;
     font-weight: bold;
 }
@@ -26,17 +28,18 @@ html{
 
 h1{
     color: #FFFFFF;
-    margin-top: -1250px;
+    margin-top: -1500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: serif;
+    font-family: sans-serif;
     font-size: 80px;
     font-weight: bold;
-    letter-spacing: 30px;
+    letter-spacing: 45px;
     position: relative;
     left: 10px;
     transition: ease-out 0.3s;
+    
 }
 
 h1:hover{
@@ -45,44 +48,45 @@ h1:hover{
     transform: scale(1.02);
 }
 
-#centro{
+.centro{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Century Gothic";
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     color: #FFFFFF;
-    position: relative;
-    left: -150px;
+    position: absolute;
+    left:39%;
     opacity: 0.6;
-    top: 42px;
-    z-index: 1;
+    top: 18px;
+    top:65%;
     transition: ease-out 0.3s;
 }
 
-#cassino{
+.cassino{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     font-family: "Century Gothic";
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     color: #FFFFFF;
-    position: relative;
-    left: 150px;
+    position: absolute;
+    left: 57%;
     opacity: 0.6;
-    margin-top: 0px;
-    z-index: 2;
+    top:65%;
     transition: ease-out 0.3s;
 }
 
-#cassino:hover{
+.cassino:hover{
     cursor: default;
     opacity: 1;
     transition: ease-in 0.3s;
 }
-#centro:hover{
+.centro:hover{
     cursor: default;
     opacity: 1;
     transition: ease-in 0.3s;
